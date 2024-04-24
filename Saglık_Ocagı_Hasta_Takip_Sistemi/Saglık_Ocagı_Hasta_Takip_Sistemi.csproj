@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE4AA8B6-FA8B-4B3E-8C40-B066C202E6CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Saglık_Ocagı_Hasta_Takip_Sistemi</RootNamespace>
+    <AssemblyName>Saglık_Ocagı_Hasta_Takip_Sistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="hastakabulForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hastakabulForm.Designer.cs">
+      <DependentUpon>hastakabulForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doktortanitmaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doktortanitmaForm.Designer.cs">
+      <DependentUpon>doktortanitmaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dosyaaramayardımıForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dosyaaramayardımıForm.Designer.cs">
+      <DependentUpon>dosyaaramayardımıForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="girisekranıForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="girisekranıForm.Designer.cs">
+      <DependentUpon>girisekranıForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="genelform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="genelform.Designer.cs">
+      <DependentUpon>genelform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hastabilgileriForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hastabilgileriForm.Designer.cs">
+      <DependentUpon>hastabilgileriForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanıcıtanıtmaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanıcıtanıtmaForm.Designer.cs">
+      <DependentUpon>kullanıcıtanıtmaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personeltanitmaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personeltanitmaForm.Designer.cs">
+      <DependentUpon>personeltanitmaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PoliklinikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoliklinikForm.Designer.cs">
+      <DependentUpon>PoliklinikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="raporlarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="raporlarForm.Designer.cs">
+      <DependentUpon>raporlarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="referanslarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="referanslarForm.Designer.cs">
+      <DependentUpon>referanslarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="referanslargirisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="referanslargirisForm.Designer.cs">
+      <DependentUpon>referanslargirisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="taburcuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="taburcuForm.Designer.cs">
+      <DependentUpon>taburcuForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="doktortanitmaForm.resx">
+      <DependentUpon>doktortanitmaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dosyaaramayardımıForm.resx">
+      <DependentUpon>dosyaaramayardımıForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="girisekranıForm.resx">
+      <DependentUpon>girisekranıForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hastakabulForm.resx">
+      <DependentUpon>hastakabulForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="genelform.resx">
+      <DependentUpon>genelform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hastabilgileriForm.resx">
+      <DependentUpon>hastabilgileriForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanıcıtanıtmaForm.resx">
+      <DependentUpon>kullanıcıtanıtmaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personeltanitmaForm.resx">
+      <DependentUpon>personeltanitmaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoliklinikForm.resx">
+      <DependentUpon>PoliklinikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="raporlarForm.resx">
+      <DependentUpon>raporlarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="referanslarForm.resx">
+      <DependentUpon>referanslarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="referanslargirisForm.resx">
+      <DependentUpon>referanslargirisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="taburcuForm.resx">
+      <DependentUpon>taburcuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
